@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_SaveChanges"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_imdb_Edit" />
+
+    <TextView
+        android:id="@+id/tvName_Edit"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_NameEdit"
+        android:textColor="#030101"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName_Edit"
+        android:layout_width="253dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:text="@string/etName_Edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription_Edit"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvDescription_Edit"
+        android:textColor="#140707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName_Edit" />
+
+    <EditText
+        android:id="@+id/ml_Description_Edit"
+        android:layout_width="386dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription_Edit" />
+
+    <TextView
+        android:id="@+id/tv_Genre_Edit"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/tv_Genre_Edit"
+        android:textColor="#0F0505"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_Description_Edit" />
+
+    <TextView
+        android:id="@+id/tv_RatingLabel_Edit"
+        android:layout_width="117dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_Rating_Edit"
+        android:textColor="#FC070101"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Genre_Edit" />
+
+    <SeekBar
+        android:id="@+id/sb_rating_Edit"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:max="5"
+        android:min="0"
+        app:layout_constraintEnd_toStartOf="@+id/tv_rating_Edit"
+        app:layout_constraintTop_toBottomOf="@+id/sp_genre_Edit" />
+
+    <Spinner
+        android:id="@+id/sp_genre_Edit"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/genreList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_Description_Edit" />
+
+    <EditText
+        android:id="@+id/et_year_Edit"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint_year"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sb_rating_Edit" />
+
+    <EditText
+        android:id="@+id/et_imdb_Edit"
+        android:layout_width="372dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_imdb"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_year_Edit" />
+
+    <TextView
+        android:id="@+id/tv_rating_Edit"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/tv_rating_Edit"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_genre_Edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

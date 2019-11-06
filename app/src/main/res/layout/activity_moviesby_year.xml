@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoviesbyYearActivity">
+
+    <TextView
+        android:id="@+id/tv_title_byRating"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_moviesByYearTitle"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_titleLabel_byRating"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_TitleLabel_Year"
+        android:textColor="#0F0D0D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_byRating" />
+
+    <TextView
+        android:id="@+id/tv_movieName_byRating"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_movieName_Year"
+        android:textColor="#050202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_titleLabel_byRating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_byRating" />
+
+    <TextView
+        android:id="@+id/tv_descriptionLabel_byRating"
+        android:layout_width="254dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/tv_DescriptionLabel_Year"
+        android:textColor="#050404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movieName_byRating" />
+
+    <TextView
+        android:id="@+id/ml_descriptionValue_byRating"
+        android:layout_width="384dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:lines="10"
+        android:text="@string/tv_description_Year"
+        android:textColor="#030101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descriptionLabel_byRating" />
+
+    <TextView
+        android:id="@+id/tv_GenreLabel_byRating"
+        android:layout_width="107dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_GenreLabel_Year"
+        android:textColor="#110F0F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_descriptionValue_byRating" />
+
+    <TextView
+        android:id="@+id/tv_genreLabel_byRating"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_ratingValue_ByYear"
+        android:textColor="#030202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_GenreLabel_byRating" />
+
+    <TextView
+        android:id="@+id/tv_yearLabel_byRating"
+        android:layout_width="105dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_YearLabel_Year"
+        android:textColor="#030202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genreLabel_byRating" />
+
+    <TextView
+        android:id="@+id/tv_IMDBLabel_byRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tv_IMDBLabel_Year"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yearLabel_byRating" />
+
+    <TextView
+        android:id="@+id/tv_genreValue_byRating"
+        android:layout_width="259dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_genreValue_year"
+        android:textColor="#FC090303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_GenreLabel_byRating"
+        app:layout_constraintTop_toBottomOf="@+id/ml_descriptionValue_byRating" />
+
+    <TextView
+        android:id="@+id/tv_ratingValue_byRating"
+        android:layout_width="254dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_ratingValue_Year"
+        android:textColor="#E8050303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_genreLabel_byRating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genreValue_byRating" />
+
+    <TextView
+        android:id="@+id/tv_yearValue_byRating"
+        android:layout_width="252dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_yearValue_Year"
+        android:textColor="#020101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_yearLabel_byRating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ratingValue_byRating" />
+
+    <TextView
+        android:id="@+id/tv_IMDBValue_byRating"
+        android:layout_width="396dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tv_imdbValue_Year"
+        android:textColor="#070303"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Finish_byRating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_IMDBLabel_byRating" />
+
+    <Button
+        android:id="@+id/btn_Finish_byRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_finish_year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_next_byRating"
+        app:layout_constraintStart_toEndOf="@+id/iv_previous_byRating" />
+
+    <ImageView
+        android:id="@+id/iv_first_byRating"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/iv_previous_byRating"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_first_byRating"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/iv_next_byRating"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_last_byRating"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/iv_last_byRating"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/last" />
+</androidx.constraintlayout.widget.ConstraintLayout>
