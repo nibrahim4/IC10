@@ -1,3 +1,65 @@
 <resources>
     <string name="app_name">IC10</string>
+    <string name="btnAddMovie">Add Movie</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnDeleteMovie">Delete Movie</string>
+    <string name="btnYearList">Show List by Year</string>
+    <string name="btnRatingList">Show List by Rating</string>
+    <string name="btnCreateMovie">Add Movie</string>
+    <string name="tvName">Name:</string>
+    <string name="etName" />
+    <string name="tvDescription">Description:</string>
+    <string name="tv_Genre">Genre:</string>
+    <string name="tv_Rating">Rating:</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_imdb">IMDB</string>
+    <string name="tv_rating" />
+    <string name="btn_SaveChanges">Save Changes</string>
+    <string name="tv_NameEdit">Name</string>
+    <string name="etName_Edit" />
+    <string name="tvDescription_Edit">Description:</string>
+    <string name="tv_Genre_Edit">Genre:</string>
+    <string name="tv_Rating_Edit">Rating:</string>
+    <string name="tv_rating_Edit" />
+    <string name="tv_moviesByYearTitle">Movies by Year</string>
+    <string name="tv_TitleLabel_Year">Title:</string>
+    <string name="tv_movieName_Year" />
+    <string name="tv_DescriptionLabel_Year">Description:</string>
+    <string name="tv_description_Year" />
+    <string name="tv_GenreLabel_Year">Genre:</string>
+    <string name="tv_RatingLabel_Year">Rating:</string>
+    <string name="tv_YearLabel_Year">Year:</string>
+    <string name="tv_IMDBLabel_Year">IMDB:</string>
+    <string name="tv_genreValue_year" />
+    <string name="tv_ratingValue_Year" />
+    <string name="tv_yearValue_Year" />
+    <string name="tv_ratingsValue_Year" />
+    <string name="tv_imdbValue_Year" />
+    <string name="btn_finish_year">Finish</string>
+    <string name="tv_ratingValue_ByYear">Rating:</string>
+    <string name="tv_title_byRating">Movies by Rating</string>
+    <string name="tv_titleLabel_byRating">Title:</string>
+    <string name="tv_movieName_byRating" />
+    <string name="tv_descriptionLabel_byRating">Description:</string>
+    <string name="ml_descriptionValue_byRating" />
+    <string name="tv_genreValue_byRating" />
+    <string name="tv_ratingValue_byRating" />
+    <string name="tv_yearLabel_byRating">Year:</string>
+    <string name="tv_yearValue_byRating" />
+    <string name="tv_imdbValue_byRating" />
+    <string name="btn_Finish_byRating">Finish</string>
+    <string name="tv_rating_denominator">/5</string>
+    <string name="tv_hidden" />
+
+    <string-array name="genreList">
+        <item>Select</item>
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
 </resources>

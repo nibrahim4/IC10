@@ -4,8 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,11 +27,36 @@ import java.util.Map;
 import io.grpc.internal.LogExceptionRunnable;
 
 public class MainActivity extends AppCompatActivity {
+    public Button btn_AddMovie;
+    public boolean isAddButtonClicked = false;
+    public Button btn_EditMovie;
+    public Button btn_DeleteMovie;
+    public Button btn_MoviesByYear;
+    public Button btn_MoviesByRating;
+    public ArrayList<Movie> movieList = new ArrayList<Movie>();
+    public ArrayList<String> nameList = new ArrayList<String>();
+    public static final String MOVIE_KEY = "movies";
+    public static final int REQ_CODE = 5;
+    public Bundle extrasFromAddMovie = new Bundle();
+    public Movie movie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("My Favorite Movies");
+
+
+        btn_AddMovie = findViewById(R.id.btnAddMovie);
+        btn_AddMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                isAddButtonClicked = true;
+                Intent intentToAddMovie = new Intent(MainActivity.this, AddMovieActivity.class);
+                startActivityForResult(intentToAddMovie, REQ_CODE);
+            }
+        });
 
         // Access a Cloud Firestore instance from your Activity
         FirebaseFirestore db = FirebaseFirestore.getInstance();
